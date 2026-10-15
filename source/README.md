@@ -12,8 +12,11 @@ The work has two steps, and `level1.csv` is the link between them. The first ste
 
 ```text
 bill image
-    -> vision model reads the printed page
+    -> vision model reads the full page (this is the main read)
     -> Python cleans dates, amounts, and labels
+    -> if a field is still empty:
+           zoom a copy, and the vision model reads that copy
+           if that field is still empty, Tesseract OCR reads the zoomed copy
     -> level1.csv  (bill_id, json)
             -> questions CSV, joined on bill_id
             -> scope check, then an answer from that JSON
@@ -22,9 +25,9 @@ bill image
 
 ### The model reads. Python decides the final values.
 
-A model that can see a photo reads the page. Python then turns that text into the final bill object.
+The vision model reads the photo. The page is sent to it as an image, and it returns the printed fields as JSON. Tesseract does not do this first read. Python then turns that text into the final bill object.
 
-The model is used for reading because the bills are photographs, and the layout differs across KE, LESCO, and IESCO. Python is used for the final values because a date, a credit, and a rupee amount must follow the same rules every time. The same printed text becomes the same JSON on a later run. Units, taxes, totals, and payables stay as printed. When a subtotal does not match the sum of its lines, the printed subtotal is kept and a warning is recorded.
+The vision model is used for the first read because the bills are photographs, and the layout differs across KE, LESCO, and IESCO. OCR is a later backup for a field the model left empty. Python is used for the final values because a date, a credit, and a rupee amount must follow the same rules every time. The same printed text becomes the same JSON on a later run. Units, taxes, totals, and payables stay as printed. When a subtotal does not match the sum of its lines, the printed subtotal is kept and a warning is recorded.
 
 Amounts stay exact. The model returns them as text, including commas and a CR suffix. Python stores them as decimals and writes the shortest plain number. Ordinary floating-point numbers can change a printed amount while it is saved, so those values are refused.
 
