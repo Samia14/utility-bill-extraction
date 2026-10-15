@@ -1,0 +1,2 @@
+[console_scripts]
+bill-extract = bill_extract.cli:main

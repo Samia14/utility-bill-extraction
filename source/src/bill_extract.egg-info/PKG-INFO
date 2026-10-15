@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: bill-extract
+Version: 1.0.0
+Summary: Extract Pakistani electricity bills into JSON and level1.csv.
+Requires-Python: >=3.11
+Requires-Dist: openai>=1.40.0
+Requires-Dist: pillow>=10.0.0
+Requires-Dist: python-dotenv>=1.0.0

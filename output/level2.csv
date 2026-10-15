@@ -1,0 +1,286 @@
+bill_id,question_id,question,answer
+IESCO_0002,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+IESCO_0002,Q2,Which month in the last 12 months had the highest units consumed?,I don't know. The bill only shows units for 2026-08 (676 units). Monthly consumption for the other months is not on the bill.
+IESCO_0002,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","The bill does not show any fuel adjustment (FPA or FCA) amount or the month it applies to.  
+I don't know."
+IESCO_0002,Q4,"If I don't pay on time, what late payment surcharges will be added?","The late payment surcharge is 2,981.  
+This is 72,878 (payable after due date) minus 69,897 (payable within due date)."
+IESCO_0002,Q5,Am I consuming more units than in the same month last year?,I could not check that question. Please try again.
+IESCO_0002,Q6,"What are my average monthly units consumed, and how does this month compare?","The average monthly units consumed is not on the bill.
+
+Units on this bill: 676 units.
+
+Estimate: Assuming this bill represents one month, the average = 676 units per month.
+
+Comparison: This month used 676 units, so it equals that estimate.
+
+I don't know how this compares to previous months because previous months' consumption is not on the bill."
+IESCO_0002,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"This bill shows 676 units consumed (for August 2026). 
+
+The bill does not show consumption for June, July, or for December–February. I cannot calculate the summer vs. winter difference from this bill alone.
+
+If you provide the units for the other months or the other monthly bills, I can calculate the difference."
+IESCO_0002,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",The bill does not show payments for 12 months. I don't know if you have been paying every bill.
+IESCO_0002,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows units consumed: 676.  
+The bill does not show the units for the previous two months.  
+I don't know if your units have gone up or down over the last 3 months."
+IESCO_0002,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month trend is not on the bill.
+
+Estimate: assuming next month matches this bill's consumption (no trend provided), expect 676 units."
+IESCO_0002,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+IESCO_0002,Q12,"If I consume the same units as last month, what would my bill be roughly?","Last month (on this bill) you used 676 units.  
+The current bill for that usage is 38323.  
+Arrears on the bill are 31203.  
+Payable within due date (including arrears) is 69897.  
+Payable after due date is 72878.
+
+Estimate: Assuming the tariff, rates and taxes stay the same, your next monthly bill would be about 38323."
+IESCO_0003,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+IESCO_0003,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+IESCO_0003,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","The fuel adjustment (FPA) charge is 172.  
+It is for the bill month 2026-09 (September 2026)."
+IESCO_0003,Q4,"If I don't pay on time, what late payment surcharges will be added?","The late payment surcharge shown is 124.  
+The bill lists payable within due date = 1649 and payable after due date = 1773, so surcharge = 1773 − 1649 = 124."
+IESCO_0003,Q5,Am I consuming more units than in the same month last year?,"The bill shows 58 units consumed for 2026-09 (reading date 2026-09-27).  
+The bill does not show consumption for the same month last year.  
+I don't know if you are consuming more than last year."
+IESCO_0003,Q6,"What are my average monthly units consumed, and how does this month compare?","This bill shows 58 units consumed (reading date 2026-09-27).  
+The bill does not show an average monthly units figure.  
+I don't know whether 58 units is higher or lower than your usual because previous months' usage is not on the bill.  
+Estimate: Assuming this is your only available monthly bill, average monthly consumption = 58 units."
+IESCO_0003,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,That information is not on the bill. The bill only shows this month's consumption: 58 units.
+IESCO_0003,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",I don't know. The payments for the 12 months are not on the bill.
+IESCO_0003,Q9,Have my units consumed gone up or down over the last 3 months?,I could not check that question. Please try again.
+IESCO_0003,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month consumption trend is not on this bill.
+
+Estimate: Assuming next month's usage equals this bill's usage.  
+Expect about 58 units."
+IESCO_0003,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+IESCO_0003,Q12,"If I consume the same units as last month, what would my bill be roughly?","If you use the same 58 units, your bill would be about 1,477.
+
+Estimate: I assume the same rates, charges, subsidies, taxes, and no arrears as on this bill. 
+
+That works out to about 25.47 per unit (1,477 ÷ 58)."
+IESCO_0005,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+IESCO_0005,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+IESCO_0005,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","The fuel adjustment (FPA) on this bill is 599.  
+It is for the bill month 2026-09 (September 2026)."
+IESCO_0005,Q4,"If I don't pay on time, what late payment surcharges will be added?","If you don't pay by the due date (2026-09-24), a late payment surcharge of 671 will be added.  
+Payable within due date: 8603.  
+Payable after due date: 9274."
+IESCO_0005,Q5,Am I consuming more units than in the same month last year?,"I don't know. This bill does not show consumption for the same month last year. If you provide last year's units, I can compare them to 177 units."
+IESCO_0005,Q6,"What are my average monthly units consumed, and how does this month compare?","This bill shows 177 units consumed for 2026-09 (current reading 3801.12 minus previous reading 3624.46).  
+The bill does not show an average monthly consumption.  
+Estimate: assuming this month is typical, average monthly consumption ≈ 177 units.  
+Comparison: this month equals that estimate. Difference = 0 units."
+IESCO_0005,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,I could not check that question. Please try again.
+IESCO_0005,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","I don't know. The bill does not show the 12-month payment history, so I cannot tell if you paid every bill. The bill does show arrears = 0, so there is no outstanding past balance on this account now."
+IESCO_0005,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows 177 units consumed (reading date 2026-09-13).  
+The bill does not show the consumption for the previous two months.  
+I don't know whether your units have gone up or down over the last 3 months."
+IESCO_0005,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month consumption trend is not on this bill.
+
+Estimate: Assuming next month's usage equals this month's consumption of 177 units.
+
+Expected consumption next month: 177 units."
+IESCO_0005,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+IESCO_0005,Q12,"If I consume the same units as last month, what would my bill be roughly?","You used 177 units last month.
+
+Estimate: assuming the same tariff, charges and taxes apply next month.  
+Rough bill: PKR 8,004 (current_bill).  
+Payable within due date: PKR 8,603.  
+Payable after due date: PKR 9,274."
+KESC_0002,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"This is a standard (non‑net‑metered) connection. 
+
+I tell because the bill shows positive units consumed (159) from meter readings and only consumption charges. The bill has no lines for exported energy, generation credits, or any ""net‑metering"" or ""solar"" label. The bill also does not explicitly state net‑metering status."
+KESC_0002,Q2,Which month in the last 12 months had the highest units consumed?,"This bill only shows units for 2026-09: 159 units.  
+The bill does not list units for the other months in the last 12 months.  
+I don't know which month had the highest consumption."
+KESC_0002,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Fuel adjustment (FPA) on this bill: 613.31.  
+It is for the bill month 2026-09 (September 2026)."
+KESC_0002,Q4,"If I don't pay on time, what late payment surcharges will be added?","If you pay after the due date the bill shows payable_after_due_date = 8,257, which is 636 more than payable_within_due_date = 7,621.  
+The bill also shows a surcharge line of 513.57.  
+The remaining difference (636.00 − 513.57 = 122.43) is not separately described on the bill."
+KESC_0002,Q5,Am I consuming more units than in the same month last year?,"I don't know.  
+The bill does not show units for the same month last year.  
+This bill shows 159 units consumed (reading 10094 − 9935).  
+If you give last year's units for September, I can compare."
+KESC_0002,Q6,"What are my average monthly units consumed, and how does this month compare?","This bill shows 159 units consumed for 2026-09.  
+The bill does not include previous months' consumption, so I cannot calculate your average monthly units.  
+Estimate: assuming a 30-day billing period, average use = 159 ÷ 30 = 5.3 units per day.  
+If you treat this month as typical, your monthly usage would be 159 units."
+KESC_0002,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,The bill does not show units consumed for June–August or for December–February. I don't know how many more units you consume in summer than in winter.
+KESC_0002,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",The 12-month payment history is not on this bill. I don't know if you paid every bill.
+KESC_0002,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows 159 units consumed for 2026-09 (previous reading 9,935; current reading 10,094).  
+The bill does not show the units for the previous two months.  
+I don't know if your units have gone up or down over the last 3 months."
+KESC_0002,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","This bill does not include a 12-month trend. It shows 159 units for 2026-09.
+
+Estimate: 159 units. Assumption: next month’s usage will equal this bill’s usage of 159 units."
+KESC_0002,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+KESC_0002,Q12,"If I consume the same units as last month, what would my bill be roughly?","Estimate: Assuming you use the same 159 units and the same rates and charges as this bill, your next bill would be about Rs 7,621 if paid by the due date.  
+The billed amount on this statement is Rs 7,620.53 (payable within due date shown as Rs 7,621) and Rs 8,257 if paid after the due date."
+KESC_0003,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"I don't know.
+
+The bill does not say ""net-metered"" or ""solar"", and it does not show exported energy, generation/solar credits, or a feed-in adjustment. It only shows units consumed (459) and the listed charges and taxes. Therefore I cannot tell from this bill whether the connection is net-metered or standard."
+KESC_0003,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+KESC_0003,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","The fuel adjustment (FPA) is 1280.14.  
+It is for the bill month 2026-09 (September 2026)."
+KESC_0003,Q4,"If I don't pay on time, what late payment surcharges will be added?","Due date: 2026-09-24.
+
+Payable within due date: 25,246.  
+Payable after due date: 27,345.
+
+The extra amount if you pay late is 2,099 (27,345 − 25,246).  
+
+The bill already includes a ""surcharge"" charge of 1,482.57 in the current charges.  
+The bill does not break down which components make up the 2,099 late payment addition."
+KESC_0003,Q5,Am I consuming more units than in the same month last year?,"I don't know. This bill shows 459 units consumed for 2026-09. The bill does not show the units for the same month last year, so I cannot compare."
+KESC_0003,Q6,"What are my average monthly units consumed, and how does this month compare?","This bill shows 459 units consumed (16997 − 16538 = 459).
+
+Estimate: assuming this bill covers 30 days, that is 15.3 units per day (459 ÷ 30 = 15.3), which corresponds to about 459 units for a 30‑day month.
+
+If you mean average monthly use over several months, that information is not on the bill."
+KESC_0003,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,I don't know. The bill only shows total units for this billing period (459 units) and does not show consumption for June–August or December–February.
+KESC_0003,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","The bill does not show payments for the 12 months, so I cannot tell if you paid every bill."
+KESC_0003,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows 459 units consumed for the billing period (reading date 2026-09-07).
+
+The bill does not show unit figures for the previous two months, so I don't know if your units have gone up or down over the last 3 months."
+KESC_0003,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month consumption trend is not on this bill.
+
+Estimate: assuming next month’s usage equals this bill’s consumption (459 units), expect 459 units."
+KESC_0003,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+KESC_0003,Q12,"If I consume the same units as last month, what would my bill be roughly?","This bill shows 459 units consumed.
+
+If you use the same 459 units and everything else stays the same, your bill would be about 25,245.77 (payable within due date: 25,246; payable after due date: 27,345).
+
+Estimate: assuming the tariff, charges, and taxes remain unchanged from this bill."
+KESC_0005,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+KESC_0005,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+KESC_0005,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","Fuel adjustment (FPA) charged: 290.39.
+
+The bill does not state which month the FPA covers.
+
+Estimate: It applies to bill_month 2026-04, assuming the FPA shown is for this bill's month."
+KESC_0005,Q4,"If I don't pay on time, what late payment surcharges will be added?","The bill shows a surcharge line of 923.78.  
+Payable within due date: 17,297. Payable after due date: 18,745. The difference is 1,448.00, so your late payment increases the amount due by 1,448.00."
+KESC_0005,Q5,Am I consuming more units than in the same month last year?,"Your consumption this period = 48 units (56 − 8).  
+I don't know if this is more than the same month last year. Last year's consumption or readings are not on the bill."
+KESC_0005,Q6,"What are my average monthly units consumed, and how does this month compare?","This month’s consumption = 48 units (56 − 8).
+
+Average monthly units consumed is not on the bill. I cannot compare to an average that is not provided.
+
+Estimate: assuming this single billing period is a typical month, the monthly average would be 48 units, so this month would equal that assumed average."
+KESC_0005,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,I don't know. The bill does not show monthly or seasonal consumption. The bill only shows previous reading 8 and current reading 56 and does not give units consumed for June–August or December–February.
+KESC_0005,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","I don't know. The bill does not show the payments for the 12 months. It only shows charges, taxes, total due, and an arrears amount of -0.47 (a small credit)."
+KESC_0005,Q9,Have my units consumed gone up or down over the last 3 months?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+KESC_0005,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+KESC_0005,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+KESC_0005,Q12,"If I consume the same units as last month, what would my bill be roughly?","Last month's consumption = 48 units.
+
+Estimate: assuming the same charges, taxes, and adjustments as on this bill.  
+Your bill would be about 17,296.50 (the current bill amount)."
+KESC_0006,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+KESC_0006,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+KESC_0006,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","The fuel adjustment (FPA) on this bill is 1,294.54.  
+It is shown for the bill month 2026-09 (September 2026)."
+KESC_0006,Q4,"If I don't pay on time, what late payment surcharges will be added?","If you miss the due date (2026-09-22) the payable amount becomes 21,624 PKR.  
+That is 21,624 − 19,964 = 1,660 PKR extra.  
+So the late payment surcharge added is 1,660 PKR."
+KESC_0006,Q5,Am I consuming more units than in the same month last year?,"I don't know. The bill shows 371 units for 2026-09 but it does not show consumption for the same month last year, so I cannot compare."
+KESC_0006,Q6,"What are my average monthly units consumed, and how does this month compare?","This bill shows 371 units consumed for the billing month (2026-09).  
+The bill does not list other months' unit usage, so I cannot calculate a multi-month average from this bill.  
+Estimate: assuming monthly usage is the same as this month. The average would be 371 units per month."
+KESC_0006,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,I don't know. The bill does not show consumption for June–August or December–February. This bill only shows units_consumed: 371 for September 2026. I can calculate the difference if you provide the seasonal totals or the bills for those months.
+KESC_0006,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",The bill does not show payments for the 12 months. I don't know if you have been paying every bill.
+KESC_0006,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows 371 units consumed (reading date 2026-09-04).  
+The bill does not show unit consumption for the previous two months.  
+I don't know whether your units have gone up or down over the last 3 months.  
+Provide the previous bills or their units and I can compare."
+KESC_0006,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month trend is not on the bill.
+
+Estimate: Assuming next month's consumption equals this bill's usage.
+Expected units: 371 units."
+KESC_0006,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+KESC_0006,Q12,"If I consume the same units as last month, what would my bill be roughly?","You used 371 units on this bill.
+
+Estimate: Assuming the tariff and all charges stay the same, your next bill would be about 19,964 PKR.
+
+Current bill (exact) is 19,963.87 PKR. Payable after the due date would be 21,624 PKR."
+LESCO_0001,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,"The bill does not state whether this is a net‑metered (solar) or a standard connection.  
+
+I tell because the bill has no mention of net‑metering, solar generation, export units, net credits, or a solar/feed‑in adjustment. The charges list only subsidies and FPA and there are no solar credit lines."
+LESCO_0001,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+LESCO_0001,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?",I could not check that question. Please try again.
+LESCO_0001,Q4,"If I don't pay on time, what late payment surcharges will be added?","If you don't pay by the due date (2026-09-28), the payable amount becomes 9,245.  
+That is 9,245 − 8,567 = 678 extra.  
+The late payment surcharge is 678."
+LESCO_0001,Q5,Am I consuming more units than in the same month last year?,I could not check that question. Please try again.
+LESCO_0001,Q6,"What are my average monthly units consumed, and how does this month compare?","This month's units consumed: 188 (current reading 10107 − previous 9919).
+
+The bill does not show an average monthly consumption or past months' consumptions, so I don't know your average monthly units.
+
+Estimate: If you assume your usage is the same every month, the average would be 188 units."
+LESCO_0001,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,That information is not on the bill. The bill shows only units for this bill (188 units) and does not show consumption for June–August or December–February.
+LESCO_0001,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",The bill does not show payments for the 12 months. I don't know whether you have been paying every bill.
+LESCO_0001,Q9,Have my units consumed gone up or down over the last 3 months?,This bill shows 188 units consumed for 2026-09. Units for the previous months are not on this bill. I don't know if your units have gone up or down over the last 3 months.
+LESCO_0001,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month consumption trend is not on this bill.
+
+Estimate: assuming next month's usage equals this bill's consumption, expect about 188 units."
+LESCO_0001,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?","Estimate: assuming you want to spread the payable within due date amount (8567) evenly over 12 months.  
+Set aside 713.92 per month."
+LESCO_0001,Q12,"If I consume the same units as last month, what would my bill be roughly?","Estimate: assuming the tariff and all charges stay the same as on this bill.  
+Your bill would be roughly the same: current bill = 8,096.  
+Payable within due date = 8,567.  
+Payable after due date = 9,245."
+LESCO_0002,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+LESCO_0002,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+LESCO_0002,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?","The fuel adjustment (shown as ""fpa"") is 806.  
+It is for the bill month 2026-09 (September 2026)."
+LESCO_0002,Q4,"If I don't pay on time, what late payment surcharges will be added?","If you don't pay by the due date (2026-09-28), a late payment surcharge of 1,973 will be added. This is the difference between Payable after due date (26,345) and Payable within due date (24,372)."
+LESCO_0002,Q5,Am I consuming more units than in the same month last year?,"This bill shows 417 units consumed for 2026-09.  
+The units for the same month last year are not on the bill.  
+I cannot determine if you used more without last year’s figure.  
+If you give the units for Sep 2025, I can compare."
+LESCO_0002,Q6,"What are my average monthly units consumed, and how does this month compare?","This bill shows 417 units consumed for the bill month 2026-09.  
+The bill does not show an average monthly consumption for other months, so I cannot calculate a multi-month average from this bill.  
+Estimate: If this month is representative, average monthly consumption ≈ 417 units. (Assumption: this single month is typical.)"
+LESCO_0002,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+LESCO_0002,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?","The 12-month payment history is not on this bill.  
+I don't know if you've paid every bill.  
+This bill shows arrears: 0."
+LESCO_0002,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows units consumed this month: 417 units.  
+The bill does not show the last 3 months' consumption, so I cannot tell if your usage has gone up or down."
+LESCO_0002,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","A 12‑month consumption trend is not on the bill.  
+This bill shows 417 units consumed (previous reading 42159, current reading 42576).  
+Estimate: assuming next month's usage equals last month's usage, expect about 417 units."
+LESCO_0002,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+LESCO_0002,Q12,"If I consume the same units as last month, what would my bill be roughly?","If you use the same 417 units, your bill would be about 23,566 (the current_bill on this statement).
+
+Estimate: assumes the same tariff, rates and fixed charges apply as on this bill."
+LESCO_0008,Q1,Is this a net-metered (solar) connection or a standard connection? How did you tell?,I could not check that question. Please try again.
+LESCO_0008,Q2,Which month in the last 12 months had the highest units consumed?,"I can only answer questions about this electricity bill. I can explain the amounts and dates on the bill, calculate from those figures, or give an estimate based on this bill."
+LESCO_0008,Q3,"How much fuel adjustment am I being charged (shown as FPA or FCA on the bill), and for which month?",The FPA (fuel price adjustment) charge on this bill is 193.6. It is for the bill month 2026-04 (April 2026).
+LESCO_0008,Q4,"If I don't pay on time, what late payment surcharges will be added?","If you pay after the due date (2026-04-29) the bill shows payable after due date = 2051 and payable within due date = 1910.  
+The extra amount added for late payment is 141.0 (2051 − 1910).  
+The bill also lists a surcharge charge of 38.27 as part of the current charges."
+LESCO_0008,Q5,Am I consuming more units than in the same month last year?,"This bill shows 89 units consumed (previous 6529, current 6618).  
+Units for the same month last year are not on the bill.  
+I don't know if you are consuming more than last year."
+LESCO_0008,Q6,"What are my average monthly units consumed, and how does this month compare?","Average monthly units (based on this bill): 89 units.  
+Calculation: 89 units ÷ 1 billing month = 89 units/month.
+
+How this month compares: This month is 89 units, so it equals the average because this bill has only one month of usage.  
+
+If you want a comparison to earlier months, that data is not on the bill."
+LESCO_0008,Q7,How many more units do I consume in summer (June-August) than in winter (December-February)?,The bill does not show units broken down by season or by month. I don't know how many more units you consume in summer than in winter.
+LESCO_0008,Q8,"Looking at the payments for the 12 months shown on the bill, have I been paying every bill?",This bill does not show payments for the 12 months. I don't know if you have been paying every bill.
+LESCO_0008,Q9,Have my units consumed gone up or down over the last 3 months?,"This bill shows 89 units consumed (previous reading 6529, current reading 6618).  
+The bill does not show units for the previous two months, so I don't know if your units have gone up or down over the last 3 months."
+LESCO_0008,Q10,"Based on the 12 months trend, how many units should I expect to consume next month?","The 12-month trend is not on the bill.
+
+Estimate: assuming your usage stays the same as this bill (89 units), expect about 89 units next month."
+LESCO_0008,Q11,"If I wanted to spread my electricity cost evenly across the year, how much should I set aside each month?",I could not check that question. Please try again.
+LESCO_0008,Q12,"If I consume the same units as last month, what would my bill be roughly?","Your current bill is for 89 units. The current bill amount shown is 1,678.50.
+
+Estimate: Assuming you use the same 89 units and all charges stay the same, your next bill would be about 1,678.50."

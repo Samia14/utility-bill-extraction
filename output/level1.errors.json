@@ -1,0 +1,86 @@
+[
+  {
+    "source": "D:\\utility\\test\\bills\\IESCO_0003.png",
+    "bill_id": "IESCO_0003",
+    "ok": true,
+    "errors": [
+      {
+        "field": "total_charges",
+        "code": "subtotal_mismatch",
+        "message": "The printed charges subtotal does not equal the sum of the charges lines. The printed subtotal was kept.",
+        "raw": "2636"
+      }
+    ]
+  },
+  {
+    "source": "D:\\utility\\test\\bills\\IESCO_0005.png",
+    "bill_id": "IESCO_0005",
+    "ok": true,
+    "errors": [
+      {
+        "field": "total_charges",
+        "code": "subtotal_mismatch",
+        "message": "The printed charges subtotal does not equal the sum of the charges lines. The printed subtotal was kept.",
+        "raw": "7711"
+      }
+    ]
+  },
+  {
+    "source": "D:\\utility\\test\\bills\\KESC_0005.png",
+    "bill_id": "KESC_0005",
+    "ok": true,
+    "errors": [
+      {
+        "field": "units_consumed",
+        "code": "unparseable_amount",
+        "message": "The units figure could not be read.",
+        "raw": "286 units"
+      }
+    ]
+  },
+  {
+    "source": "D:\\utility\\test\\bills\\LESCO_0001.png",
+    "bill_id": "LESCO_0001",
+    "ok": true,
+    "errors": [
+      {
+        "field": "total_charges",
+        "code": "subtotal_mismatch",
+        "message": "The printed charges subtotal does not equal the sum of the charges lines. The printed subtotal was kept.",
+        "raw": "7348"
+      }
+    ]
+  },
+  {
+    "source": "D:\\utility\\test\\bills\\LESCO_0002.png",
+    "bill_id": "LESCO_0002",
+    "ok": true,
+    "errors": [
+      {
+        "field": "total_charges",
+        "code": "subtotal_mismatch",
+        "message": "The printed charges subtotal does not equal the sum of the charges lines. The printed subtotal was kept.",
+        "raw": "19733"
+      }
+    ]
+  },
+  {
+    "source": "D:\\utility\\test\\bills\\LESCO_0008.png",
+    "bill_id": "LESCO_0008",
+    "ok": true,
+    "errors": [
+      {
+        "field": "total_charges",
+        "code": "subtotal_mismatch",
+        "message": "The printed charges subtotal does not equal the sum of the charges lines. The printed subtotal was kept.",
+        "raw": "1601.56"
+      },
+      {
+        "field": "total_taxes",
+        "code": "subtotal_mismatch",
+        "message": "The printed taxes subtotal does not equal the sum of the taxes lines. The printed subtotal was kept.",
+        "raw": "308.44"
+      }
+    ]
+  }
+]
