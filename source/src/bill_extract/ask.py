@@ -15,10 +15,11 @@ import re
 import sys
 from collections.abc import Callable
 from dataclasses import dataclass
+from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
-from bill_extract.config import Config, load_config
+from bill_extract.config import Config, load_optional_config
 from bill_extract.errors import (
     ConfigurationError,
     DependencyError,
@@ -94,14 +95,22 @@ def answer_about_bill(
 ) -> BillAnswer:
     """Answer one question, or refuse it when it is outside the bill scope.
 
-    Pass classify and answer in tests. When they are omitted, the model named
-    in the config does both steps.
+    Pass classify and answer in tests. When both are omitted, the answer is
+    computed from the saved bill record. A question outside the fixed catalog
+    is refused and stored on the guardrail.
     """
     blocked = customer_reply_for_block(question)
     if blocked is not None:
         return BillAnswer(text=blocked, in_scope=False, session_id=session_id)
 
     bill_text = _require_bill_object(bill_json)
+    if classify is None and answer is None:
+        return _answer_from_saved_record(
+            question,
+            bill_text,
+            session_id=session_id,
+            storage_dir=storage_dir or default_storage_dir(),
+        )
     checker = classify if classify is not None else _model_checker(config)
     decision = decide_scope(question, checker)
     if not decision.in_scope:
@@ -139,7 +148,7 @@ def ask_main(argv: list[str] | None = None) -> int:
         return 2
 
     try:
-        config = load_config()
+        config = load_optional_config()
         bill_id, bill_json = load_bill_text(Path(args.bill), args.bill_id)
         session_id = session_file_id(bill_id, args.session)
         result = answer_about_bill(
@@ -276,6 +285,29 @@ def _require_bill_object(bill_json: str) -> str:
     if not isinstance(value, dict):
         raise DocumentLoadError("The bill data must be one JSON object.")
     return bill_json.strip()
+
+
+def _answer_from_saved_record(
+    question: str,
+    bill_json: str,
+    *,
+    session_id: str,
+    storage_dir: Path,
+) -> BillAnswer:
+    """Answer from the extracted record. A question outside the catalog is stored."""
+    from bill_extract.record_answer import answer_from_record
+
+    record = json.loads(bill_json, parse_float=Decimal, parse_int=Decimal)
+    if not isinstance(record, dict):
+        raise DocumentLoadError("The bill data must be one JSON object.")
+    text, in_scope = answer_from_record(
+        question,
+        record,
+        storage_dir / "blocked_questions.json",
+    )
+    if not text.strip():
+        raise ModelResponseError("The assistant returned an empty answer. Please try again.")
+    return BillAnswer(text=text, in_scope=in_scope, session_id=session_id)
 
 
 def _model_checker(config: Config | None) -> Callable[[str], ScopeCheck]:

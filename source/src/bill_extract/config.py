@@ -96,6 +96,23 @@ def load_config(
     return Config(api_key=api_key, model_name=model_name, model_provider=model_provider)
 
 
+def load_optional_config(
+    environ: Mapping[str, str] | None = None,
+    env_file: Path | str | None = None,
+) -> Config | None:
+    """Load settings. A missing key returns None so OCR can still run.
+
+    Any other configuration error is raised. The question path does not need a
+    key, and extraction calls the model only when a reading gap remains.
+    """
+    try:
+        return load_config(environ, env_file)
+    except ConfigurationError as exc:
+        if str(exc).startswith("Set OPENAI_API_KEY"):
+            return None
+        raise
+
+
 def _default_env_files() -> list[Path]:
     """Project .env next to the package, then a .env in the working directory."""
     project_env = Path(__file__).resolve().parents[2] / ".env"

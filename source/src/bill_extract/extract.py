@@ -188,6 +188,50 @@ def extract_raw(png_bytes: bytes, config: Config, client: Any) -> dict[str, Any]
     return _read_with_repair(client, config, _vision_payload(config, encoded))
 
 
+def extract_gap_values(
+    png_bytes: bytes,
+    config: Config,
+    client: Any,
+    fields: list[str],
+) -> dict[str, Any]:
+    """Read only the named gaps from a zoomed window. Agreed values are not requested."""
+    if not fields:
+        return {}
+    encoded = base64.standard_b64encode(png_bytes).decode("ascii")
+    names = ", ".join(fields)
+    payload = {
+        "model": config.model_name,
+        "temperature": 0,
+        "max_completion_tokens": 4000,
+        "response_format": {"type": "json_object"},
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "You read one zoomed piece of a Pakistani electricity bill. "
+                    "Return one JSON object whose keys are the requested fields. "
+                    "Copy the printed text. Use null when a requested field is not printed "
+                    "in this piece. Do not calculate. Do not correct a printed figure."
+                ),
+            },
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": f"Read only these fields: {names}."},
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/png;base64,{encoded}",
+                            "detail": "high",
+                        },
+                    },
+                ],
+            },
+        ],
+    }
+    return parse_model_json(_complete(client, payload))
+
+
 def extract_fields(
     png_bytes: bytes,
     config: Config,

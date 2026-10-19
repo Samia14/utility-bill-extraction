@@ -15,10 +15,9 @@ from bill_extract.errors import (
     ModelError,
     ModelResponseError,
 )
-from bill_extract.extract import build_client, extract_fields, extract_raw
-from bill_extract.fallback import reread_missing
+from bill_extract.extract import build_client, extract_gap_values
 from bill_extract.load import ensure_pillow, is_supported, load_pages
-from bill_extract.normalize import normalize
+from bill_extract.scan import scan_image, tesseract_tokens
 from bill_extract.schema import rows_with_data, write_level1_csv
 
 
@@ -37,7 +36,7 @@ def collect_inputs(path: Path) -> list[Path]:
 def run_batch(
     input_path: Path,
     output_path: Path,
-    config: Config,
+    config: Config | None,
     client: Any = None,
 ) -> int:
     """Extract every bill. Return 0 when all files succeed, otherwise 1.
@@ -47,7 +46,7 @@ def run_batch(
     """
     try:
         ensure_pillow()
-        if client is None:
+        if client is None and config is not None:
             client = build_client(config)
     except DependencyError as exc:
         print(str(exc), file=sys.stderr)
@@ -102,17 +101,18 @@ def _process_file(path: Path, config: Config, client: Any) -> list[dict[str, Any
     return results
 
 
-def _process_page(page: Any, config: Config, client: Any) -> dict[str, Any]:
+def _process_page(page: Any, config: Config | None, client: Any) -> dict[str, Any]:
     try:
-        raw = extract_raw(page.png_bytes, config, client)
-        source = Path(str(page.source).split("#page=", 1)[0])
-
-        def read_crop(crop_bytes: bytes, fields: list[str]) -> dict[str, Any]:
-            return extract_fields(crop_bytes, config, client, fields)
-
-        raw, crop_errors = reread_missing(source, page.png_bytes, raw, read_crop)
-        data, errors = normalize(raw)
-        errors = [*crop_errors, *errors]
+        image = _page_image(page.png_bytes)
+        data, errors = scan_image(
+            image,
+            tesseract_tokens,
+            fill_gap=_gap_filler(config, client),
+        )
+    except DependencyError as exc:
+        return _failure(page.source, page.bill_id, "document_load", str(exc))
+    except DocumentLoadError as exc:
+        return _failure(page.source, page.bill_id, "document_load", str(exc))
     except ModelError as exc:
         return _failure(page.source, page.bill_id, "model_error", str(exc))
     except ModelResponseError as exc:
@@ -126,6 +126,37 @@ def _process_page(page: Any, config: Config, client: Any) -> dict[str, Any]:
         "errors": errors,
         "bill_id": page.bill_id,
     }
+
+
+def _page_image(png_bytes: bytes):
+    try:
+        import cv2
+        import numpy as np
+    except ImportError as exc:
+        raise DependencyError(
+            "OpenCV is not installed, so the bill image could not be read."
+        ) from exc
+    array = np.frombuffer(png_bytes, dtype=np.uint8)
+    image = cv2.imdecode(array, cv2.IMREAD_COLOR)
+    if image is None:
+        raise DocumentLoadError("The bill image could not be opened.")
+    return image
+
+
+def _gap_filler(config: Config | None, client: Any):
+    """Return a model filler, or None when no model is configured."""
+    if config is None or client is None:
+        return None
+
+    def fill(crop: Any, fields: list[str]) -> dict[str, Any]:
+        import cv2
+
+        ok, encoded = cv2.imencode(".png", crop)
+        if not ok:
+            return {}
+        return extract_gap_values(encoded.tobytes(), config, client, fields)
+
+    return fill
 
 
 def _failure(source: str, bill_id: str, code: str, message: str) -> dict[str, Any]:

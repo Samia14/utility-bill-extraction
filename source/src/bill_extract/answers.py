@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from bill_extract.ask import answer_about_bill, session_file_id
-from bill_extract.config import Config, load_config
+from bill_extract.config import Config, load_optional_config
 from bill_extract.errors import (
     ConfigurationError,
     DependencyError,
@@ -101,7 +101,7 @@ def answers_main(argv: list[str] | None = None) -> int:
     questions_path = Path(args.questions)
     output_path = Path(args.output) if args.output else bills_path.parent / "level2.csv"
     try:
-        config = load_config()
+        config = load_optional_config()
         batch = answer_questions(
             bills_path,
             questions_path,

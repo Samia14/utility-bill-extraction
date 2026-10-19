@@ -6,7 +6,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from bill_extract.config import load_config
+from bill_extract.config import load_optional_config
 from bill_extract.errors import ConfigurationError
 from bill_extract.pipeline import run_batch
 
@@ -44,7 +44,7 @@ def main(argv: list[str] | None = None) -> int:
         return answers_main(raw[1:])
     args = build_parser().parse_args(raw)
     try:
-        config = load_config()
+        config = load_optional_config()
     except ConfigurationError as exc:
         print(str(exc), file=sys.stderr)
         return 2
